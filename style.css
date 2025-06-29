@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url('download.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+}
+
+.weather-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.detail-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.detail-box span {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 12px;
+  opacity: 0.8;
+}

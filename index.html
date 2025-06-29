@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+      <h2 id="location">City</h2>
+      <div class="temp" id="temperature">--°C</div>
+      <div class="details">
+        <div class="detail-box">
+          <p>🌬️ Wind</p>
+          <span id="wind">--</span>
+        </div>
+        <div class="detail-box">
+          <p>💧 Humidity</p>
+          <span id="humidity">--</span>
+        </div>
+        <div class="detail-box">
+          <p>🌞 UV Index</p>
+          <span id="uv">--</span>
+        </div>
+        <div class="detail-box">
+          <p>🌧️ Rain</p>
+          <span id="rain">--</span>
+        </div>
+      </div>
+      <p class="description">This scene captures the calm serenity of a cool, overcast day with a gentle breeze.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
